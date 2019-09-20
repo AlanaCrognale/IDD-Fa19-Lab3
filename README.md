@@ -63,7 +63,7 @@ softspot: linear
 ### 1. Reading and writing values to the Arduino EEPROM
 
 **a. Does it matter what actions are assigned to which state? Why?**
-Yes - in this case, only certain states can be reached from certain states, i.e. acan only go from 0->1, 1->2, 1->0, or 2->1, so in this structure, you cannot jump from state 0 to 2 or vice versa. So, we wouldn't want to switch around which actions are going to which states because we want to be able to only go from clear->write->read or read->write->clear, not clear->read or read->clear.
+Yes - in this case, only certain states can be reached from certain states, i.e. can only go from 0->1, 1->2, 1->0, or 2->1, so in this structure, you cannot jump from state 0 to 2 or vice versa. So, we wouldn't want to switch around which actions are going to which states because we want to be able to only go from clear->write->read or read->write->clear, not clear->read or read->clear.
 
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 We only want the setup() action to occur once per potentiometer turn.  If this portion of the code were in loop(), we would be constantly restarting the reading/writing/clearing process without finishing, which could cause issues in storage.

@@ -89,6 +89,6 @@ Using eeprom.put(), store data the same as if you were using eeprom.write() exce
  
 **a. Record and upload a short demo video of your logger in action.**
 ![Attention meter_perfect](https://github.com/AlanaCrognale/IDD-Fa19-Lab3/blob/master/attention_perfect.mov)
-![Attention meter_too_much](https://github.com/AlanaCrognale/IDD-Fa19-Lab3/blob/master/attention_too_much.movv)
+![Attention meter_too_much](https://github.com/AlanaCrognale/IDD-Fa19-Lab3/blob/master/attention_too_much.mov)
 ![Attention meter_not_enough](https://github.com/AlanaCrognale/IDD-Fa19-Lab3/blob/master/attention_not_enough.mov)
 ![Code](https://github.com/AlanaCrognale/IDD-Fa19-Lab3/blob/master/DataLogger.zip)
